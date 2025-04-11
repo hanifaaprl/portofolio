@@ -1,31 +1,82 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Sederhana</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            text-align: center;
-            margin: 50px;
-        }
-        button {
-            background-color: blue;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: darkblue;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | hanifaprl</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Selamat Datang di Halaman Sederhana</h1>
-    <p>Ini adalah contoh halaman HTML sederhana dengan tombol interaktif.</p>
-    <button onclick="alert('Halo! Anda menekan tombol.')">Klik Saya</button>
+<body class="bg-pink-50 text-gray-700 font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-500">Hanifaprl</h1>
+    <div class="space-x-6">
+      <a href="#about" class="hover:text-pink-400">About</a>
+      <a href="#projects" class="hover:text-pink-400">Projects</a>
+      <a href="#contact" class="hover:text-pink-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center text-center p-12 bg-pink-100">
+    <img src="hani.png" alt="Profile" class="rounded-full shadow-lg mb-6">
+    <h2 class="text-4xl font-bold text-pink-600 mb-2">Hi, Saya Hanifah Dwi Aprilianti</h2>
+    <p class="text-lg text-gray-600 mb-6">A passionate designer & developer creating beautiful experiences.</p>
+    <a href="#projects" class="bg-pink-400 hover:bg-pink-500 text-white px-6 py-3 rounded-full transition">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-12">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-pink-500 mb-4">About Me</h3>
+      <p class="text-gray-600">I’m a creative developer with a love for minimalistic designs and seamless user experiences. I specialize in web design, branding, and front-end development.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-12 bg-pink-100">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center text-pink-500 mb-10">My Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project Card -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x200/?website,design" alt="Project 1" class="rounded-xl mb-4">
+          <h4 class="text-xl font-bold text-pink-500 mb-2">Project One</h4>
+          <p class="text-gray-600 mb-4">A modern website design for fashion brands.</p>
+          <a href="#" class="text-pink-400 hover:underline">View Project →</a>
+        </div>
+        <!-- Project Card -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x200/?app,design" alt="Project 2" class="rounded-xl mb-4">
+          <h4 class="text-xl font-bold text-pink-500 mb-2">Project Two</h4>
+          <p class="text-gray-600 mb-4">Mobile app for beauty and lifestyle enthusiasts.</p>
+          <a href="#" class="text-pink-400 hover:underline">View Project →</a>
+        </div>
+        <!-- Project Card -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x200/?branding,art" alt="Project 3" class="rounded-xl mb-4">
+          <h4 class="text-xl font-bold text-pink-500 mb-2">Project Three</h4>
+          <p class="text-gray-600 mb-4">Branding package for a startup company.</p>
+          <a href="#" class="text-pink-400 hover:underline">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-12">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-pink-500 mb-4">Get In Touch</h3>
+      <p class="text-gray-600 mb-8">I'm open for freelance opportunities or collaborations. Let's create something beautiful together!</p>
+      <a href="mailto:your.email@example.com" class="bg-pink-400 hover:bg-pink-500 text-white px-8 py-4 rounded-full transition">Say Hello</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 bg-white mt-12 text-gray-400 text-sm">
+    © 2025 Your Name. All rights reserved.
+  </footer>
+
 </body>
 </html>

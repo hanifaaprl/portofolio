@@ -20,8 +20,8 @@ jobs:
 
     - name: Deploy to ECS
       run: |
-        ssh -o StrictHostKeyChecking=no root@8.210.42.43 << 'EOF'
-          cd /usr/share/nginx/html
+        ssh -o StrictHostKeyChecking=no root@18.139.116.28 << 'EOF'
+          cd /usr/share/nginx/html/newPortoHani
           git pull origin main
           # Restart Nginx or any other service if needed
           sudo systemctl restart nginx
